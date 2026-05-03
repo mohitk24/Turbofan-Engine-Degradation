@@ -25,7 +25,6 @@ estimation** on the NASA C-MAPSS turbofan engine degradation dataset:
 
 The Deep CNN achieves the best PHM Score (16.1% improvement over LSTM), while Embed-RUL achieves the best RMSE. This divergence reveals that minimizing symmetric error does not guarantee conservative prediction behavior — a critical distinction for safety-critical aerospace applications.
 
-```
 
 ---
 
