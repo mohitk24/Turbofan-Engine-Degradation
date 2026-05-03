@@ -25,38 +25,6 @@ estimation** on the NASA C-MAPSS turbofan engine degradation dataset:
 
 The Deep CNN achieves the best PHM Score (16.1% improvement over LSTM), while Embed-RUL achieves the best RMSE. This divergence reveals that minimizing symmetric error does not guarantee conservative prediction behavior — a critical distinction for safety-critical aerospace applications.
 
----
-
-## Repository Structure
-
-```
-cmapss-rul/
-|
-|-- IDL_Project.ipynb           # Main training + evaluation notebook (all models, all datasets)
-|-- reproduce_results.ipynb     # Loads checkpoints -> regenerates all metrics & figures
-|-- README.md                   # This file
-|
-|-- data/                       # Place downloaded C-MAPSS .txt files here
-|   |-- train_FD001.txt
-|   |-- train_FD002.txt
-|   |-- train_FD003.txt
-|   |-- train_FD004.txt
-|   |-- test_FD001.txt
-|   |-- test_FD002.txt
-|   |-- test_FD003.txt
-|   |-- test_FD004.txt
-|   |-- RUL_FD001.txt
-|   |-- RUL_FD002.txt
-|   |-- RUL_FD003.txt
-|   `-- RUL_FD004.txt
-|
-|-- checkpoints/                # Saved model weights
-|   |-- lstm_fd001.pth
-|   |-- dcnn_fd001.pth
-|   `-- embed_rul_fd001.pth
-|
-`-- report/
-    `-- CMU_24788_RUL_Report_Karangutkar.pdf
 ```
 
 ---
